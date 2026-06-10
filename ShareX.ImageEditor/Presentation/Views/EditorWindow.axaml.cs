@@ -49,6 +49,8 @@ namespace ShareX.ImageEditor.Presentation.Views
         {
             InitializeComponent();
 
+            Win32KeyboardInterop.Attach(this);
+
             _options = options;
             ApplySavedWindowState();
 
